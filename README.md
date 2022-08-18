@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor]()
-- Live Site URL: [Github]()
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/interactive-rating-vanilla-css-and-js-gcjfXcuZxd)
+- Live Site URL: [Github](https://viphakorn.github.io/interactive-rating-component-main/)
 
 ## My process
 
