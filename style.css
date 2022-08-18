@@ -1,0 +1,197 @@
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213 19% 18% / 0.6);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+body {
+  background-color: var(--very-dark-blue);
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding-inline: 1rem;
+}
+
+main {
+  width: min(412px, 100%);
+  height: 412px;
+  background-color: var(--dark-blue);
+  border-radius: 1.9em;
+  padding: 2rem;
+}
+
+.rating-card {
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.rating-card .star {
+  background-color: var(--dark-blue);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  color: var(--white);
+  font-size: 1.65rem;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+
+p {
+  font-size: 0.9375rem;
+  color: var(--medium-grey);
+  line-height: 1.6;
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.rating-btn {
+  background-color: var(--dark-blue);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: var(--medium-grey);
+  font-size: 1rem;
+  font-weight: 700;
+  transition: 0.4s;
+}
+
+.rating-btn:hover {
+  background-color: var(--light-grey);
+  color: var(--white);
+}
+
+.rating-btn:focus {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.button {
+  width: 100%;
+  padding-block: 0.8em;
+  background-color: var(--orange);
+  border-radius: 100vmax;
+  text-transform: uppercase;
+  color: var(--white);
+  font-size: 1rem;
+  letter-spacing: 1px;
+  transition: 0.4s;
+}
+
+.button:hover {
+  color: var(--orange);
+  background-color: var(--white);
+}
+
+.thank-you-card {
+  padding: 0.25rem;
+  height: 100%;
+  display: none;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.thank-you-card.show {
+  display: flex;
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.rated {
+  padding: 0.5em 1em;
+  color: var(--orange);
+  background-color: var(--dark-blue);
+  border-radius: 100vmax;
+  font-size: 0.9375rem;
+}
+
+
+@media (max-width:30em) {
+  main {
+    width: min(330px, 100%);
+    height: 330px;
+    padding: 1.5rem;
+    border-radius: 1em;
+  }
+
+  .rating-card .star {
+    width: 40px;
+    height: 40px;
+  }
+
+  .rating-card .star img {
+    width: 0.875rem;
+  }
+
+  h1 {
+    font-size: 1.35rem;
+  }
+
+  p {
+    font-size: 0.875rem;
+  }
+
+  .rating {
+    gap: 1rem;
+  }
+
+  .rating-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 0.875rem;
+  }
+
+  .button {
+    font-size: 0.875rem;
+    padding-block: 1em;
+  }
+
+  .rated {
+    font-size: 0.875rem;
+  }
+}
