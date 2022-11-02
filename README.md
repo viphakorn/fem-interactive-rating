@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/interactive-rating-vanilla-css-and-js-gcjfXcuZxd)
-- Live Site URL: [Github Pgaes]([https://viphakorn.github.io/interactive-rating-component-main/](https://viphakorn.github.io/fem-interactive-rating/))
+- Live Site URL: [Github Pages](https://viphakorn.github.io/fem-interactive-rating/)
 
 ## My process
 
